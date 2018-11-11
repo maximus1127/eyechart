@@ -16,6 +16,11 @@ class EventWasTriggered implements ShouldBroadcast
 
     public $size;
     public $numbers;
+    public $numbers2;
+    public $numbers3;
+    public $numbers4;
+    public $numbers5;
+    public $numbers6;
 
 
     /**
@@ -23,10 +28,15 @@ class EventWasTriggered implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct($size, $numbers)
+    public function __construct($size, $numbers, $numbers2, $numbers3, $numbers4, $numbers5, $numbers6)
     {
         $this->size = $size;
         $this->numbers = $numbers;
+        $this->numbers2 = $numbers2;
+        $this->numbers3 = $numbers3;
+        $this->numbers4 = $numbers4;
+        $this->numbers5 = $numbers5;
+        $this->numbers6 = $numbers6;
 
     }
 
