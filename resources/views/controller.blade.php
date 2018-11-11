@@ -16,10 +16,6 @@
 
             <style>
 
-            * {
-                  box-sizing: border-box;
-              }
-
 
             button:focus {
                     outline: none;
@@ -29,6 +25,9 @@
                 button:active{
                     background-color: #33383f;
                     transform: translateY(4px);
+                }
+                html{
+                  width: 100%;
                 }
 
              body{
@@ -165,27 +164,20 @@
                   background-color: #3e8e41;
               }
 
-              .col-1 {width: 8.33%;}
-              .col-2 {width: 16.66%;}
-              .col-3 {width: 25%;}
-              .col-4 {width: 33.33%;}
-              .col-5 {width: 41.66%;}
-              .col-6 {width: 50%;}
-              .col-7 {width: 58.33%;}
-              .col-8 {width: 66.66%;}
-              .col-9 {width: 75%;}
-              .col-10 {width: 83.33%;}
-              .col-11 {width: 91.66%;}
-              .col-12 {width: 100%;}
-              [class*="col-"] {
-                  float: left;
-                  padding: 15px;
+
+
+              #instructions{
+                height: 100%;
+                width: 100%;
+                position: fixed;
+                display: none;
+                top: 0;
+                left: 0;
+                background:rgba(252,252,252,1);
+                z-index: 10;
+                line-height: 20px;
               }
-              .row::after {
-                  content: "";
-                  clear: both;
-                  display: table;
-              }
+
 
           </style>
 
@@ -264,6 +256,225 @@
       </div>
 
 
+      <div id="instructions">
+
+      <ul style="float:left;">
+        These are the keyboard shortcuts to interact with the chart without a connected controlling device.
+
+            <li>
+              1 = Set patient viewing images to letters
+            </li>
+            <li>
+              2 = Set patient viewing images to numbers
+            </li>
+            <li>
+              3 = Set patient viewing images to tumbling E's
+            </li>
+            <li>
+              4 = Set patient viewing images to pictures
+            </li>
+            <li>
+              5 = Toggle Duochrome filter on and off
+            </li>
+            <li>
+              6 = Toggle screen blackout on and off
+            </li>
+            <li>
+              Q = 20/400
+            </li>
+            <li>
+              W = 20/300
+            </li>
+            <li>
+              E = 20/200
+            </li>
+            <li>
+              R = 20/100
+            </li>
+            <li>
+              T = 20/80
+            </li>
+            <li>
+              Y = 20/70
+            </li>
+            <li>
+              U = 20/60
+            </li>
+            <li>
+              I = 20/50
+            </li>
+            <li>
+              O = 20/40
+            </li>
+            <li>
+              P = 20/30
+            </li>
+            <li>
+              A = 20/25
+            </li>
+            <li>
+              S = 20/20
+            </li>
+            <li>
+              D = 20/400 and 20/200 group
+            </li>
+            <li>
+              F = 20/100, 20/80, and 20/70 group
+            </li>
+            <li>
+              G = 20/60, 20/50, 20/40 group
+            </li>
+            <li>
+              H = 20/30, 20/25, 20/20 group
+            </li>
+            <li>
+              J = 20/60 through 20/20 group
+            </li>
+            <li>
+              Arrow Up = Calibration button to set letters to larger size
+            </li>
+            <li>
+              Arrow Down = Calibration buttons to set letters to smaller size
+            </li>
+            <li>
+              M = Calibration button to make letters a mirror image
+            </li>
+            <li>
+              * = Reset cailbration of chart and delete all user-saved settings
+            </li>
+      </ul>
+
+      <ul style="float:left;">
+      Here we have the sizes of the 20/20 lines that you need to configure for each exam room
+            <li>
+              6' = 2.6mm
+            </li>
+            <li>
+              6'6" = 2.8mm
+            </li>
+            <li>
+              7' = 3.1mm
+            </li>
+            <li>
+              7'6" = 3.3mm
+            </li>
+            <li>
+              8' = 3.5mm
+            </li>
+            <li>
+              8'6" = 3.7mm
+            </li>
+            <li>
+              9' = 3.9mm
+            </li>
+            <li>
+              9'6" = 4.2mm
+            </li>
+            <li>
+              10' = 4.4mm
+            </li>
+            <li>
+              10'6" = 4.6mm
+            </li>
+            <li>
+              11' = 4.8mm
+            </li>
+            <li>
+              11'6" = 5.0mm
+            </li>
+            <li>
+              12' = 5.3mm
+            </li>
+            <li>
+              12'6" = 5.5mm
+            </li>
+            <li>
+              13' = 5.7mm
+            </li>
+            <li>
+              13'6" = 5.9mm
+            </li>
+            <li>
+              14' = 6.2mm
+            </li>
+            <li>
+              14'6" = 6.4mm
+            </li>
+            <li>
+              15' = 6.6mm
+            </li>
+            <li>
+              15'6" = 6.9mm
+            </li>
+
+      </ul>
+      <ul style="float:left;">
+      <br />
+            <li>
+              16' = 7.1mm
+            </li>
+            <li>
+              16'6" = 7.3mm
+            </li>
+            <li>
+              17' = 7.5mm
+            </li>
+            <li>
+              17'6" = 7.8mm
+            </li>
+            <li>
+              18' = 8mm
+            </li>
+            <li>
+              18'6" = 8.2mm
+            </li>
+            <li>
+              19' = 8.4mm
+            </li>
+            <li>
+              19'6" = 8.6mm
+            </li>
+            <li>
+              20' = 8.9mm
+            </li>
+            <li>
+              20'6" = 9.1mm
+            </li>
+            <li>
+              21 = 9.3mm
+            </li>
+            <li>
+              21'6" = 9.5mm
+            </li>
+            <li>
+              22 = 9.8mm
+            </li>
+            <li>
+              22'6" = 10mm
+            </li>
+            <li>
+              23' = 10.2mm
+            </li>
+            <li>
+              23'6" = 10.4mm
+            </li>
+            <li>
+              24' = 10.6mm
+            </li>
+            <li>
+              24'6" = 10.9mm
+            </li>
+            <li>
+              25' = 11.1mm
+            </li>
+
+      </ul>
+      </div>
+
+
+
+
+
 
 
 
@@ -282,9 +493,7 @@
 
  var socket = io('{{ config('app.url') }}:8000');
  socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
-   if(data.size != "duochrome"){
-     clear();
-   }
+
    var number = data.size;
    var size = data.numbers;
    var numbers2 = data.numbers2;
@@ -294,49 +503,59 @@
    var numbers6 = data.numbers6;
    console.log(data);
    if(data.size == 20 || data.size == 25 || data.size == 30 || data.size == 40 || data.size == 50 || data.size == 60 || data.size == 70){
+     clear();
    $('#line1').html("<img src='/images/" + image[size[1]] + "'/> <img src='/images/" + image[size[2]] + "' /> <img src='/images/" + image[size[3]] + "' /> <img src='/images/" + image[size[4]] + "' /> <img src='/images/" + image[size[0]] + "' />" );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  } else if (data.size == 80){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[1]] + "'/> <img src='/images/" + image[size[2]] + "' /> <img src='/images/" + image[size[3]] + "' /> <img src='/images/" + image[size[4]] + "' /> " );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  } else if (data.size == 100){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[1]] + "'/> <img src='/images/" + image[size[2]] + "' /> <img src='/images/" + image[size[3]] + "' /> " );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  } else if (data.size == 200){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[1]] + "'/> <img src='/images/" + image[size[2]] + "' /> " );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  } else if (data.size == 300 || data.size == 400){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[1]] + "'/> " );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  } else if (data.size == 400200 ){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[1]] + "'/> " );
    $("#line2").html("<img src='/images/" + image[numbers2[0]] + "'/> <img src='/images/" + image[numbers2[1]] + "' />");
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  }else if (data.size == 1008070 ){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[1]] + "'/> <img src='/images/" + image[size[2]] + "' /> <img src='/images/" + image[size[3]] + "' /> " );
    $('#line2').html("<img src='/images/" + image[numbers2[0]] + "'/> <img src='/images/" + image[numbers2[1]] + "' /> <img src='/images/" + image[numbers2[2]] + "' /> <img src='/images/" + image[numbers2[3]] + "' /> " );
    $('#line3').html("<img src='/images/" + image[numbers3[0]] + "'/> <img src='/images/" + image[numbers3[1]] + "' /> <img src='/images/" + image[numbers3[2]] + "' /> <img src='/images/" + image[numbers3[3]] + "' /> <img src='/images/" + image[numbers3[4]] + "' />" );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  }else if (data.size == 605040 ){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[0]] + "'/> <img src='/images/" + image[size[1]] + "' /> <img src='/images/" + image[size[2]] + "' /> <img src='/images/" + image[size[3]] + "' /> <img src='/images/" + image[size[4]] + "' />" );
    $('#line2').html("<img src='/images/" + image[numbers2[0]] + "'/> <img src='/images/" + image[numbers2[1]] + "' /> <img src='/images/" + image[numbers2[2]] + "' /> <img src='/images/" + image[numbers2[3]] + "' /> <img src='/images/" + image[numbers2[4]] + "' />" );
    $('#line3').html("<img src='/images/" + image[numbers3[0]] + "'/> <img src='/images/" + image[numbers3[1]] + "' /> <img src='/images/" + image[numbers3[2]] + "' /> <img src='/images/" + image[numbers3[3]] + "' /> <img src='/images/" + image[numbers3[4]] + "' />" );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  }else if (data.size == 302520 ){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[0]] + "'/> <img src='/images/" + image[size[1]] + "' /> <img src='/images/" + image[size[2]] + "' /> <img src='/images/" + image[size[3]] + "' /> <img src='/images/" + image[size[4]] + "' />" );
    $('#line2').html("<img src='/images/" + image[numbers2[0]] + "'/> <img src='/images/" + image[numbers2[1]] + "' /> <img src='/images/" + image[numbers2[2]] + "' /> <img src='/images/" + image[numbers2[3]] + "' /> <img src='/images/" + image[numbers2[4]] + "' />" );
    $('#line3').html("<img src='/images/" + image[numbers3[0]] + "'/> <img src='/images/" + image[numbers3[1]] + "' /> <img src='/images/" + image[numbers3[2]] + "' /> <img src='/images/" + image[numbers3[3]] + "' /> <img src='/images/" + image[numbers3[4]] + "' />" );
    $("*.lineButtonActive").removeClass("lineButtonActive");
     $('*[data-size="' + data.size + '"]').toggleClass("lineButtonActive");
  }else if (data.size == 6020 ){
+   clear();
    $('#line1').html("<img src='/images/" + image[size[0]] + "'/> <img src='/images/" + image[size[1]] + "' /> <img src='/images/" + image[size[2]] + "' /> <img src='/images/" + image[size[3]] + "' /> <img src='/images/" + image[size[4]] + "' />" );
    $('#line2').html("<img src='/images/" + image[numbers2[0]] + "'/> <img src='/images/" + image[numbers2[1]] + "' /> <img src='/images/" + image[numbers2[2]] + "' /> <img src='/images/" + image[numbers2[3]] + "' /> <img src='/images/" + image[numbers2[4]] + "' />" );
    $('#line3').html("<img src='/images/" + image[numbers3[0]] + "'/> <img src='/images/" + image[numbers3[1]] + "' /> <img src='/images/" + image[numbers3[2]] + "' /> <img src='/images/" + image[numbers3[3]] + "' /> <img src='/images/" + image[numbers3[4]] + "' />" );
@@ -398,136 +617,92 @@
   });
 
   $( "html" ).on( "keydown", function( event ) {
+
+    if(event.which == 13){
+      if($("#instructions").css("display") == "none"){
+        $("#instructions").css("display", "block");
+      }else {
+        $("#instructions").css("display", "none");
+      }
+    }
   if (event.which == 81 ){
     $( "#fourHundred" ).trigger( "click" );
   };
-});
-$( "html" ).on( "keydown", function( event ) {
-if (event.which == 87 ){
+if(event.which == 87 ){
   $( "#threeHundred" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 69 ){
   $( "#twoHundred" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 82 ){
   $( "#oneHundred" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 84 ){
   $( "#eighty" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 89 ){
   $( "#seventy" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 85 ){
   $( "#sixty" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 73 ){
   $( "#fifty" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 79 ){
   $( "#forty" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 80 ){
   $( "#thirty" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 65 ){
   $( "#twentyFive" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 83 ){
   $( "#twenty" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 68 ){
   $( "#groupOne" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 70 ){
   $( "#groupTwo" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 71 ){
   $( "#groupThree" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 72 ){
   $( "#groupFour" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 74 ){
   $( "#groupSix" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 49 ){
   $( "#singleLetter" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 50 ){
   $( "#number" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 51 ){
   $( "#tumblingE" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 52 ){
   $( "#picture" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 53 ){
   $( "#duochrome" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 54 ){
   $( "#mute" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 40 ){
   $( "#zoomOut" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 38 ){
   $( "#zoomIn" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 77 ){
   $( "#mirror" ).trigger( "click" );
 };
-});
-$( "html" ).on( "keydown", function( event ) {
 if (event.which == 106 ){
   $( "#reset" ).trigger( "click" );
 };

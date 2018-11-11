@@ -1,6 +1,7 @@
 <html>
 
 <head>
+
   <style>
   html {
     height: 100%;
@@ -29,10 +30,6 @@
 
   }
 
-  .inverted2 {
-    filter: invert(100%);
-
-  }
 
   .duochrome {
     background-color: red;
@@ -69,20 +66,7 @@
 
   }
 
-  #target {
 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    border-radius: 50px;
-    display: none;
-  }
 
   .tumble400 img {
 
@@ -112,7 +96,7 @@
 
     height: 500%;
     margin-left: 18px;
-    margin-right: 50px;
+    margin-right: 35px;
        margin-bottom: 40px;
   }
 
@@ -174,10 +158,6 @@
        margin-bottom: 40px;
   }
 
-  #patientChart2 img {
-
-    margin-left: 35px;
-  }
 
   #cover{
   position:fixed;
@@ -202,6 +182,20 @@
 
     }
 
+    #instructions{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+      background:rgba(252,252,252,1);
+      z-index: 10;
+      line-height: 20px;
+    }
+
+
+
 
 </style>
 
@@ -212,7 +206,7 @@
 
 
 <div id="background"></div>
-<div id="target"></div>
+
 
 <div id="testDisplay">
 <div id="content">
@@ -232,6 +226,221 @@
 </div>
 <div id="cover"></div>
 
+<div id="instructions">
+
+<ul style="float:left;">
+  These are the keyboard shortcuts to interact with the chart without a connected controlling device.
+
+      <li>
+        1 = Set patient viewing images to letters
+      </li>
+      <li>
+        2 = Set patient viewing images to numbers
+      </li>
+      <li>
+        3 = Set patient viewing images to tumbling E's
+      </li>
+      <li>
+        4 = Set patient viewing images to pictures
+      </li>
+      <li>
+        5 = Toggle Duochrome filter on and off
+      </li>
+      <li>
+        6 = Toggle screen blackout on and off
+      </li>
+      <li>
+        Q = 20/400
+      </li>
+      <li>
+        W = 20/300
+      </li>
+      <li>
+        E = 20/200
+      </li>
+      <li>
+        R = 20/100
+      </li>
+      <li>
+        T = 20/80
+      </li>
+      <li>
+        Y = 20/70
+      </li>
+      <li>
+        U = 20/60
+      </li>
+      <li>
+        I = 20/50
+      </li>
+      <li>
+        O = 20/40
+      </li>
+      <li>
+        P = 20/30
+      </li>
+      <li>
+        A = 20/25
+      </li>
+      <li>
+        S = 20/20
+      </li>
+      <li>
+        D = 20/400 and 20/200 group
+      </li>
+      <li>
+        F = 20/100, 20/80, and 20/70 group
+      </li>
+      <li>
+        G = 20/60, 20/50, 20/40 group
+      </li>
+      <li>
+        H = 20/30, 20/25, 20/20 group
+      </li>
+      <li>
+        J = 20/60 through 20/20 group
+      </li>
+      <li>
+        Arrow Up = Calibration button to set letters to larger size
+      </li>
+      <li>
+        Arrow Down = Calibration buttons to set letters to smaller size
+      </li>
+      <li>
+        M = Calibration button to make letters a mirror image
+      </li>
+      <li>
+        * = Reset cailbration of chart and delete all user-saved settings
+      </li>
+</ul>
+
+<ul style="float:left;">
+Here we have the sizes of the 20/20 lines that you need to configure for each exam room
+      <li>
+        6' = 2.6mm
+      </li>
+      <li>
+        6'6" = 2.8mm
+      </li>
+      <li>
+        7' = 3.1mm
+      </li>
+      <li>
+        7'6" = 3.3mm
+      </li>
+      <li>
+        8' = 3.5mm
+      </li>
+      <li>
+        8'6" = 3.7mm
+      </li>
+      <li>
+        9' = 3.9mm
+      </li>
+      <li>
+        9'6" = 4.2mm
+      </li>
+      <li>
+        10' = 4.4mm
+      </li>
+      <li>
+        10'6" = 4.6mm
+      </li>
+      <li>
+        11' = 4.8mm
+      </li>
+      <li>
+        11'6" = 5.0mm
+      </li>
+      <li>
+        12' = 5.3mm
+      </li>
+      <li>
+        12'6" = 5.5mm
+      </li>
+      <li>
+        13' = 5.7mm
+      </li>
+      <li>
+        13'6" = 5.9mm
+      </li>
+      <li>
+        14' = 6.2mm
+      </li>
+      <li>
+        14'6" = 6.4mm
+      </li>
+      <li>
+        15' = 6.6mm
+      </li>
+      <li>
+        15'6" = 6.9mm
+      </li>
+
+</ul>
+<ul style="float:left;">
+<br />
+      <li>
+        16' = 7.1mm
+      </li>
+      <li>
+        16'6" = 7.3mm
+      </li>
+      <li>
+        17' = 7.5mm
+      </li>
+      <li>
+        17'6" = 7.8mm
+      </li>
+      <li>
+        18' = 8mm
+      </li>
+      <li>
+        18'6" = 8.2mm
+      </li>
+      <li>
+        19' = 8.4mm
+      </li>
+      <li>
+        19'6" = 8.6mm
+      </li>
+      <li>
+        20' = 8.9mm
+      </li>
+      <li>
+        20'6" = 9.1mm
+      </li>
+      <li>
+        21 = 9.3mm
+      </li>
+      <li>
+        21'6" = 9.5mm
+      </li>
+      <li>
+        22 = 9.8mm
+      </li>
+      <li>
+        22'6" = 10mm
+      </li>
+      <li>
+        23' = 10.2mm
+      </li>
+      <li>
+        23'6" = 10.4mm
+      </li>
+      <li>
+        24' = 10.6mm
+      </li>
+      <li>
+        24'6" = 10.9mm
+      </li>
+      <li>
+        25' = 11.1mm
+      </li>
+
+</ul>
+</div>
+
 <div class="fixed-bottom">
   <p>
     <h2></h2>
@@ -241,6 +450,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
 <script>
+function clear(){
+  $("#patient1").html("");
+  $("#patient2").html("");
+  $("#patient3").html("");
+  $("#patient4").html("");
+  $("#patient5").html("");
+  $("#patient6").html("");
+}
 var currentZoom;
 var letters = ["C.png", "D.png", "H.png", "K.png", "N.png", "O.png", "R.png", "S.png", "V.png", "Z.png"];
 var numbersImg = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png", "8.png", "9.png" , "5.png"];
@@ -249,7 +466,7 @@ var pictures = ["Phone.png", "Horse.png", "Car.png", "Hand.png", "Bird.png", "Ca
 var image = letters;
 var socket = io('{{ config('app.url') }}:8000');
 socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
-  clear();
+
   var size = data.size;
   var numbers = data.numbers;
   var numbers2 = data.numbers2;
@@ -267,77 +484,90 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
    sixthLine = document.getElementById("patient6");
 
   if(size == 20){
+    clear();
     firstLine.className = ("tumble20");
    $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> <img src='/images/" + image[numbers[0]] + "' />" );
    $("h2").html("20/"+size);
   }
   if(size == 25){
+    clear();
     firstLine.className = ("tumble25");
   $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> <img src='/images/" + image[numbers[0]] + "' />" );
   $("h2").html("20/"+size);
 
   }
   if(size == 30){
+    clear();
     firstLine.className = ("tumble30");
    $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> <img src='/images/" + image[numbers[0]] + "' />" );
    $("h2").html("20/"+size);
 
   }
   if(size == 40){
+    clear();
     firstLine.className = ("tumble40");
   $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> <img src='/images/" + image[numbers[0]] + "' />" );
   $("h2").html("20/"+size);
 
   }
   if(size == 50){
+    clear();
     firstLine.className = ("tumble50");
    $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> <img src='/images/" + image[numbers[0]] + "' />" );
    $("h2").html("20/"+size);
 
   }
   if(size == 60){
+    clear();
     firstLine.className = ("tumble60");
   $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> <img src='/images/" + image[numbers[0]] + "' />" );
   $("h2").html("20/"+size);
 
   }
   if(size == 70){
+    clear();
     firstLine.className = ("tumble70");
    $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> <img src='/images/" + image[numbers[0]] + "' />" );
    $("h2").html("20/"+size);
 
   }
   if(size == 80){
+    clear();
     firstLine.className = ("tumble80");
   $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> <img src='/images/" + image[numbers[4]] + "' /> " );
   $("h2").html("20/"+size);
 
   }
   if(size == 100){
+    clear();
     firstLine.className = ("tumble100");
    $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' /> <img src='/images/" + image[numbers[3]] + "' /> " );
    $("h2").html("20/"+size);
 
   }
   if(size == 200){
+    clear();
     firstLine.className = ("tumble200");
   $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> <img src='/images/" + image[numbers[2]] + "' />" );
   $("h2").html("20/"+size);
 
   }
   if(size == 300){
+    clear();
     firstLine.className = ("tumble300");
    $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> " );
    $("h2").html("20/"+size);
 
   }
   if(size == 400){
+    clear();
     firstLine.className = ("tumble400");
   $("#patient1").html("<img src='/images/" + image[numbers[1]] + "'/> " );
   $("h2").html("20/"+size);
   }
 
  if (data.size == 400200 ){
+   clear();
    firstLine.className = ("tumble400");
    secondLine.className = ("tumble200");
     $('#patient1').html("<img src='/images/" + image[numbers[1]] + "'/> " );
@@ -346,6 +576,7 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
   }
    if (data.size == 1008070 ){
+     clear();
      firstLine.className = ("tumble100");
      secondLine.className = ("tumble80");
      thirdLine.className = ("tumble70");
@@ -355,6 +586,7 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
     $("h2").html("20/100 <br /> 20/80 <br /> 20/70");
   }
    if (data.size == 605040 ){
+     clear();
      firstLine.className = ("tumble60");
      secondLine.className = ("tumble50");
      thirdLine.className = ("tumble40");
@@ -365,6 +597,7 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
   }
    if (data.size == 302520 ){
+     clear();
      firstLine.className = ("tumble30");
      secondLine.className = ("tumble25");
      thirdLine.className = ("tumble20");
@@ -375,6 +608,7 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
   }
    if (data.size == 6020 ){
+     clear();
      firstLine.className = ("tumble60");
      secondLine.className = ("tumble50");
      thirdLine.className = ("tumble40");
@@ -429,14 +663,7 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
     }
 
-    function clear(){
-      $("#patient1").html("");
-      $("#patient2").html("");
-      $("#patient3").html("");
-      $("#patient4").html("");
-      $("#patient5").html("");
-      $("#patient6").html("");
-    }
+
 
 
     function mute(){
@@ -467,11 +694,12 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
   function reset() {
     localStorage.removeItem("storeSize");
     localStorage.removeItem("mirror");
+
     window.location.href = window.location.href;
   }
 
    function mirror(){
-       $("html").addClass("mirror");
+       $("testDisplay").addClass("mirror");
        localStorage.setItem("mirror", 1);
    }
 
@@ -482,16 +710,131 @@ socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
 });
 
+
+
   $(document).ready(function(){
+    var numbers;
+
     if (!localStorage.storeSize) {
       currentZoom = 40;
     } else {
 
-  $("#content").css('font-size', localStorage.storeSize);
-  $("#content").css('height', localStorage.storeSize);
+    $("#content").css('font-size', localStorage.storeSize);
+    $("#content").css('height', localStorage.storeSize);
+    }
 
-  }
+
+
+    $('html').on('keydown', function(event){
+      if(event.which == 13){
+        if($("#instructions").css("display") == "none"){
+
+          $("#instructions").css("display", "block");
+        }else {
+          $("#instructions").css("display", "none");
+        }
+      }
+      if (event.which == 81 ){
+        numbers = 400;
+      };
+      if (event.which == 87 ){
+      numbers = 300;
+      };
+      if (event.which == 69 ){
+      numbers = 200;
+      };
+      if (event.which == 82 ){
+      numbers = 100;
+      };
+      if (event.which == 84 ){
+      numbers = 80;
+      };
+      if (event.which == 89 ){
+      numbers = 70;
+      };
+      if (event.which == 85 ){
+      numbers = 60;
+      };
+      if (event.which == 73 ){
+      numbers = 50;
+      };
+      if (event.which == 79 ){
+      numbers = 40;
+      };
+      if (event.which == 80 ){
+      numbers = 30;
+      };
+      if (event.which == 65 ){
+      numbers = 25;
+      };
+      if (event.which == 83 ){
+      numbers = 20;
+      };
+      if (event.which == 68 ){
+      numbers = 400200;
+      };
+      if (event.which == 70 ){
+      numbers = 1008070;
+      };
+      if (event.which == 71 ){
+      numbers = 605040;
+      };
+      if (event.which == 72 ){
+      numbers = 302520;
+      };
+      if (event.which == 74 ){
+      numbers = 6020;
+      };
+      if (event.which == 49 ){
+      numbers = "mode1";
+      };
+      if (event.which == 50 ){
+      numbers = "mode2";
+      };
+      if (event.which == 51 ){
+      numbers = "mode3";
+      };
+      if (event.which == 52 ){
+      numbers = "mode4";
+      };
+      if (event.which == 53 ){
+      numbers = "duochrome";
+      };
+      if (event.which == 54 ){
+      numbers = "mute";
+      };
+      if (event.which == 40 ){
+      numbers = "shrink";
+      };
+      if (event.which == 38 ){
+      numbers = "grow";
+      };
+      if (event.which == 77 ){
+      numbers = "mirror";
+      };
+      if (event.which == 106 ){
+      numbers = "reset";
+      };
+
+
+      $.ajax({
+        url: '/a',
+        data: {
+          'size': numbers,
+        },
+        success: function(response){
+          // $("p").html(response + ": " + numbers);
+          // console.log(response);
+        }
+      });
+    });
+
+
+
+
 });
+
+
 </script>
 </body>
 </html>
