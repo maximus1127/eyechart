@@ -47,7 +47,7 @@
 
 
               .modeButton{
-                  height: 50px;
+                  height: 40px;
                   width: 100px;
                    background-image: linear-gradient(to right, #8e0202 , #bf0000);
                   color: white;
@@ -58,7 +58,7 @@
 
               }
               .duochrome{
-                  height: 50px;
+                  height: 40px;
                   width: 100px;
                    background-image: linear-gradient(to right, #022140 , #140289);
                   color: white;
@@ -70,7 +70,7 @@
               }
 
               .lineButtonActive{
-                  height: 50px;
+                  height: 40px;
                   width: 100px;
                    background-image: linear-gradient(to right, #022140 , #140289);
                   color: white;
@@ -81,7 +81,7 @@
 
               }
               .modeButtonActive{
-                  height: 50px;
+                  height: 40px;
                   width: 100px;
                    background-image: linear-gradient(to right, #022140 , #140289);
                   color: white;
@@ -210,7 +210,7 @@
 
           <button class="modeButton singleButtons" id="picture" data-size = "mode4">Pictures</button>
           <button class="modeButton singleButtons" id="duochrome" data-size = "duochrome">DuoChrome</button>
-          <button class="modeButton singleButtons" id="mute" data-size = "mute">Mute Screen</button>
+          <button class="modeButton singleButtons" id="mute" data-size = "mute">Mute</button>
         </div>
       </div>
 
