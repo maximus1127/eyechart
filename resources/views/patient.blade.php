@@ -447,8 +447,9 @@ Here we have the sizes of the 20/20 lines that you need to configure for each ex
   </p>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/socket.io.js"></script>
+<script src="/js/popper.min.js"></script>
 <script>
 function clear(){
   $("#patient1").html("");
@@ -464,7 +465,7 @@ var numbersImg = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png",
 var ees = ["Down.png","Up.png","Left.png","Right.png", "Down.png","Up.png","Left.png","Right.png","Left.png","Right.png"];
 var pictures = ["Phone.png", "Horse.png", "Car.png", "Hand.png", "Bird.png", "Cake.png", "Phone.png", "Horse.png", "Car.png", "Hand.png", "Bird.png", "Cake.png"];
 var image = letters;
-var socket = io('{{ config('app.url') }}:8000');
+var socket = io(location.origin + ':8000');
 socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
   var size = data.size;
