@@ -120,7 +120,7 @@
               .dropbtn {
                   background-color: #152f59;
                   color: white;
-                  padding: 16px;
+                  padding: 6px;
                   font-size: 16px;
                   border: none;
                   cursor: pointer;
@@ -138,7 +138,7 @@
               .dropdown-content {
                   display: none;
                   position: fixed;
-                 top: 55px;
+                 top: 35px;
                  left: 0;
                   background-color: #f9f9f9;
                   min-width: 160px;
