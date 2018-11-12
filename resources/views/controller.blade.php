@@ -202,8 +202,8 @@
             </div>
           </div>
 
-      <div class="modeHolder">
-        <div class="row col-8">
+      <div class="modeHolder row">
+
           <button class="modeButton singleButtons" id="singleLetter" data-size = "mode1" >Letters</button>
           <button class="modeButton singleButtons" id="number" data-size = "mode2">Numbers</button>
           <button class="modeButton singleButtons" id="tumblingE" data-size = "mode3">Tumbling E</button>
@@ -211,7 +211,7 @@
           <button class="modeButton singleButtons" id="picture" data-size = "mode4">Pictures</button>
           <button class="modeButton singleButtons" id="duochrome" data-size = "duochrome">DuoChrome</button>
           <button class="modeButton singleButtons" id="mute" data-size = "mute">Mute</button>
-        </div>
+
       </div>
 
 
@@ -492,7 +492,7 @@
  var pictures = ["Phone.png", "Horse.png", "Car.png", "Hand.png", "Bird.png", "Cake.png", "Phone.png", "Horse.png", "Car.png", "Hand.png", "Bird.png", "Cake.png"];
  var image = letters;
 
- var socket = io(location.origin + ':8000');
+ var socket = io('http://' + location.hostname + ':8000');
  socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
    var number = data.size;

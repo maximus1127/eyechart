@@ -465,7 +465,7 @@ var numbersImg = ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png", "7.png",
 var ees = ["Down.png","Up.png","Left.png","Right.png", "Down.png","Up.png","Left.png","Right.png","Left.png","Right.png"];
 var pictures = ["Phone.png", "Horse.png", "Car.png", "Hand.png", "Bird.png", "Cake.png", "Phone.png", "Horse.png", "Car.png", "Hand.png", "Bird.png", "Cake.png"];
 var image = letters;
-var socket = io(location.origin + ':8000');
+var socket = io('http://' + location.hostname + ':8000');
 socket.on('private-default:App\\Events\\EventWasTriggered', function(data){
 
   var size = data.size;
