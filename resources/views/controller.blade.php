@@ -345,7 +345,7 @@
       </ul>
 
       <ul style="float:left;">
-      Here we have the sizes of the 20/20 lines that you need to configure for each exam room
+      Here we have the sizes of the 20/20 lines that you need to configure for each exam room.<br /> Measure the distance from patient to screen. <br />If the room is mirrored, measure from patient to mirror, then mirror to screen.<br /> Activate the 20/20 line and make the letters larger or smaller to match the correct distance in feet for the room.
             <li>
               6' = 2.6mm
             </li>
@@ -410,6 +410,8 @@
       </ul>
       <ul style="float:left;">
       <br />
+      <br />
+      <br /><br />
             <li>
               16' = 7.1mm
             </li>
