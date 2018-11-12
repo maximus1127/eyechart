@@ -230,8 +230,8 @@
       </div>
 
 
-       <div class="modeHolder">
-         <div class="row">
+       <div class="modeHolder row">
+
 
            <button class="modeButton singleButtons" id="fourHundred" data-size="400">20/400</button>
            <button class="modeButton singleButtons" id="threeHundred" data-size="300">20/300</button>
@@ -252,7 +252,7 @@
           <button class="modeButton singleButtons" id="groupThree" data-size = "605040" style="border: 5px solid #847777">60/50/40</button>
           <button class="modeButton singleButtons" id="groupFour" data-size = "302520" style="border: 5px solid #847777">30/25/20</button>
           <button class="modeButton singleButtons" id="groupSix" data-size = "6020" style="border: 5px solid #847777">60-20</button>
-        </div>
+
       </div>
 
 
